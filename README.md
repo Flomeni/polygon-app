@@ -1,13 +1,13 @@
         In order to build or/and run the project one must follow STEPS listed below.
 
-Install packages:
+1) Install packages:
      npm i
 
-Run webpack server:
+2) Run:
      npm run start
 
-Build for dev:
-     npm run build_dev
-
-Build for prod:
-     npm run build_prod
+3) Build:
+     Dev:
+          npm run build_dev
+     Prod:
+          npm run build_prod
