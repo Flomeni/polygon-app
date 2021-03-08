@@ -1,4 +1,4 @@
-export class LazyScrollComponent {
+export class Observer {
 
     _observer;
 
@@ -24,5 +24,10 @@ export class LazyScrollComponent {
 
     subscribe(targetElement) {
         this._observer.observe(targetElement);
+    }
+
+    unsubscribe() {
+        this._observer.disconnect();
+        this._observer = null;
     }
 }

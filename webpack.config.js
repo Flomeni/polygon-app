@@ -30,7 +30,7 @@ const RULES = [
 const PLUGINS = [
     new HtmlWebpackPlugin({
         title: 'Infinite scrolling',
-        template: './src/index.html',
+        template: './src/app.html',
         inject: 'body'
     }),
     new CopyPlugin({
@@ -45,7 +45,7 @@ const PLUGINS = [
 
 module.exports = {
     entry: {
-        main: './src/index.js'
+        main: './src/app.js'
     },
     devtool: 'inline-source-map',
     devServer: {
