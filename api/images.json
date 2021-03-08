@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "imageUrl": "assets/images/1.jpg",
+        "alt": "Some description on first picture"
+    },
+    {
+        "id": 2,
+        "imageUrl": "assets/images/2.jpg",
+        "alt": "Some description on second picture"
+    },
+    {
+        "id": 3,
+        "imageUrl": "assets/images/3.jpg",
+        "alt": "Some description on third picture"
+    },
+    {
+        "id": 4,
+        "imageUrl": "assets/images/4.jpg",
+        "alt": "Some description on fourth picture"
+    },
+    {
+        "id": 5,
+        "imageUrl": "assets/images/5.jpg",
+        "alt": "Some description on fifth picture"
+    },
+    {
+        "id": 6,
+        "imageUrl": "assets/images/6.jpg",
+        "alt": "Some description on sixth picture"
+    }
+]
