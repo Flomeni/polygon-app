@@ -9,6 +9,7 @@ function shuffleArray(array) {
 
 const CONTAINER_STYLE = 'masonry-container';
 const ITEM_STYLE = 'masonry-item';
+const OBSERVER_TARGET_ID = 'observerTarget';
 
 export class LazyScrollComponent extends Component {
 
@@ -20,7 +21,7 @@ export class LazyScrollComponent extends Component {
         const template = `
             <div>
                 <div class="${CONTAINER_STYLE}"></div>
-                <div id="observerTarget"></div>
+                <div id="${OBSERVER_TARGET_ID}"></div>
             </div>
         `;
         this.setTemplate(template);
@@ -51,7 +52,7 @@ export class LazyScrollComponent extends Component {
 
     _configureLazyScroll(loadImagesTo) {
         this._observer = new Observer();
-        const targetElement = this._templateAsHTML.querySelector("#observerTarget");
+        const targetElement = this._templateAsHTML.querySelector(`#${OBSERVER_TARGET_ID}`);
         const scrollArea = null;
         const subscriptionFn = this._loadImagesToNode.bind(null, loadImagesTo);
     
